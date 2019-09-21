@@ -48,7 +48,7 @@ class Dashboard extends Component {
     const donateObj = 
     {
       "code": "1234",
-      "category": "clothing",
+      "category": "Clothing",
       "cash": 5
     };
     axios.post(`${serverURL}/donate`, donateObj).then(res => {

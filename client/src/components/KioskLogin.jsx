@@ -14,6 +14,10 @@ class Kiosk extends React.Component {
 		data: []
 	}
 
+	resetState = () => {
+		this.setState({login:null});
+	}
+
 	componentDidMount(){
 		axios.get(`http://localhost:2112/data`)
 		.then(res => this.setState({data: res.data}))
@@ -36,9 +40,13 @@ class Kiosk extends React.Component {
 		setTimeout(console.log(this.state.data), 3000)
 		console.log(this.state.login)
 		console.log(this.state.code);
-		if (this.state.login !== null) return <Redirect to={{
+		if (this.state.login !== null) 
+		{
+		console.log(this.state.login);
+			return <Redirect push to={{
 			pathname: this.state.login,
 			state: {code: this.state.code}}}/>
+		}
 		return (
 			<>
 				<div className='login__container'>

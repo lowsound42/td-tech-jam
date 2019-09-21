@@ -5,11 +5,11 @@
         "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 5
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 12
             },
             {
@@ -24,11 +24,11 @@
         "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 12
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 21
             },
             {
@@ -42,11 +42,11 @@
         "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 10
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 12
             },
             {
@@ -60,11 +60,11 @@
         "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 13
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 8
             },
             {
@@ -78,11 +78,11 @@
         "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 12
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 15
             },
             {

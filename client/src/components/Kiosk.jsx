@@ -24,7 +24,10 @@ class Kiosk extends React.Component {
 					inNeedOf: res.data.inNeedOf
 				})
 		})
+	}
 
+	goBack = () => {
+		this.props.history.goBack();
 	}
 
 	render() {
@@ -33,11 +36,12 @@ class Kiosk extends React.Component {
 
 		return (
 			<>
+			<button onClick={this.goBack} className='logout'>Logout</button>
 			<div className='flexbox'>
 					<div className='image__container'>
 						<img className='image__container-image' src={image}></img>
-						<p className='image__container-code'>{this.state.code}</p>
-						<p className='image__container-name'>{this.state.userName}</p>
+						<p className='image__container-name'>User Name: {this.state.userName}</p>
+						<p className='image__container-code'>User Code: {this.state.code}</p>
 					</div>
 					<div className='card__container'>
 						<h1 className='card__container-header'>Donations to Redeem</h1>
@@ -46,8 +50,8 @@ class Kiosk extends React.Component {
                         return <KioskCard {...item}/>})) : <div>loading...</div>}
 						</div>
 						<div className='card__container-buttons'>
-							<button>Say Thanks</button>
-							<button>Help</button>
+							<button className='card__container-buttons--button'>Say Thanks</button>
+							<button className='card__container-buttons--button'>Help</button>
 						</div>
 					</div>
 			</div>

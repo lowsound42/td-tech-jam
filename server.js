@@ -2,9 +2,11 @@ const express = require('express');
 const dotenv = require('dotenv').config();
 const database = require('./data/data.json');
 const axios = require('axios');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 
 // Run `npm init`, then `npm install request request-debug request-promise-native --save`
@@ -18,32 +20,20 @@ const headers = {
     'Content-Type': 'application/json',
   }
 
-app.post('/query', (req, res) => {
-    var data = req.body;
-    axios.post('https://api.td-davinci.com/api/transfers', data, {
-        headers: headers, 
-})
-    .then(response => {
-        var json = (JSON.parse(response.data.result.receipt))
-        var obj = {
-            code:  json.code,
-            inNeedOf: 'test',
-        }
-        return obj;
-    })
-    .then(response => {
-        var tempArr; 
+app.get('/query/:id', (req, res) => {
+    var obj;
+    var code = req.params.id;
+    console.log(code);
+    var tempArr; 
         for (let i = 0; i<database.length; i++){
-            if (database[i].code == response.code){
-                console.log(database[i].inNeedOf);
+            if (database[i].code == code){
                 tempArr = database[i].inNeedOf;
                 break;
             } else continue;
         }
         res.json(tempArr);
     })
-    .then(console.log(database))
-})
+       
 
 app.post('/donate', (req, res) => {
     database.forEach(element => {

@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import { Button, Modal, Container, Row, Col } from 'react-bootstrap';
+=======
+import { Form, Button, InputGroup, FormControl, Modal, Container, Row, Col} from 'react-bootstrap';
+>>>>>>> f43ef1b609f432153c54c27139d7340f2bcfbf5e
 import styled from 'styled-components';
 import axios from 'axios';
 import * as Constants from "../utils/constants";
+
+const serverURL = 'http://localhost:2112';
 
 class Dashboard extends Component {
   constructor(){
@@ -29,15 +35,14 @@ class Dashboard extends Component {
   }
 
   connectWithRecipient() {
-    // axios.get('' + this.state.recipientCode).then(res => {
-    //   this.setState({
-    //     inNeedOf: res.data.inNeedOf
-    //   });
-    // });
-
-    this.setState({
-      showModal: true,
-      inNeedOf: ['Food', 'Clothing', 'Any']
+    const code = 1234
+    axios.get(`${serverURL}/query/` + code).then(res => {
+      console.log(res);
+      this.setState({
+        inNeedOf: res.data,
+        showModal: true
+      });
+      console.log(this.state.inNeedOf)
     });
   }
 
@@ -61,12 +66,16 @@ class Dashboard extends Component {
   }
 
   transferFunds() {
-    axios.post('').then(res => {
-
+    const donateObj = 
+    {
+      "code": "1234",
+      "category": "clothing",
+      "cash": 5
+    };
+    axios.post(`${serverURL}/donate`, donateObj).then(res => {
+     console.log(res.data)
+     this.setState({ showModal: false })
     });
-    this.setState({
-      showModal: false
-    })
   }
 
   render() {

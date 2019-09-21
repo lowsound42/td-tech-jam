@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
-  constructor() {
+  constructor() { 
     super()
   }
 

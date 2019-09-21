@@ -1,1 +1,83 @@
-[]
+[
+    {
+        "code":1234,
+        "inNeedOf": [
+            {
+                "category": "food",
+                "cash": 5
+            },
+            {
+                "category": "clothing",
+                "cash": 12
+            },
+            {
+                "category": "Hygeine",
+                "cash": 13
+            }
+        ]
+    }, 
+    {
+        "code":4321,
+        "inNeedOf": [
+            {
+                "category": "food",
+                "cash": 12
+            },
+            {
+                "category": "clothing",
+                "cash": 21
+            },
+            {
+                "category": "Hygeine",
+                "cash": 14
+            }]
+    }, 
+    {
+        "code":9491,
+        "inNeedOf": [
+            {
+                "category": "food",
+                "cash": 10
+            },
+            {
+                "category": "clothing",
+                "cash": 12
+            },
+            {
+                "category": "Hygeine",
+                "cash": 5
+            }]
+    }, 
+    {
+        "code":2118,
+        "inNeedOf": [
+            {
+                "category": "food",
+                "cash": 13
+            },
+            {
+                "category": "clothing",
+                "cash": 8
+            },
+            {
+                "category": "Hygeine",
+                "cash": 31
+            }]
+    }, 
+    {
+        "code":4866,
+        "inNeedOf": [
+            {
+                "category": "food",
+                "cash": 12
+            },
+            {
+                "category": "clothing",
+                "cash": 15
+            },
+            {
+                "category": "Hygeine",
+                "cash": 25
+            }]
+    }
+]

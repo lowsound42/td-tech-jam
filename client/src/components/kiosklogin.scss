@@ -1,0 +1,16 @@
+.form__flex{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    margin: 20rem auto;
+
+    &-code{
+        margin-bottom: 1rem;
+    }
+
+    &-pass{
+        margin-bottom: 1rem;
+    }
+}

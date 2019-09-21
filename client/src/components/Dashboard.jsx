@@ -79,7 +79,7 @@ class Dashboard extends Component {
               <Row>
               { this.state.inNeedOf.map((category, i) => (
                 <Col>
-                  {/* <Image src={wifi} roundedCircle width="15px"/> */}
+                  <img src={wifi} roundedcircle='true' width="15px"/>
                   <p>{category.category}</p>
                 </Col>
               ))}

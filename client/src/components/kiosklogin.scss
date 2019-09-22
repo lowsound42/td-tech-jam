@@ -1,16 +1,34 @@
+.login__container{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background-image: url('../assets/login.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-logo{
+        text-align: center;
+        margin: 6rem auto 2rem 34vw;
+    }
+}
+
 .form__flex{
     display: flex;
     flex-direction: column;
     width: 20%;
     justify-content: center;
     text-align: center;
-    margin: 20rem auto;
+    margin: 8rem auto 0 auto;
 
     &-code{
         margin-bottom: 1rem;
+        padding-left: 1rem;
     }
 
     &-pass{
         margin-bottom: 1rem;
+        padding-left: 1rem;
     }
 }

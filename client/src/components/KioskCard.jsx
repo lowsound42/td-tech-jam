@@ -4,18 +4,19 @@ import * as Constants from "../utils/constants";
 
 
 class Kiosk extends React.Component {
-	state = {
-	}
 
 	render() {
 		var tempCategory = this.props.category;
 		var thing = Constants.KioskCategories.filter((item) => (item.name === tempCategory))
+		console.log(thing);
 		return (
 			<>
-			<div className='kioskcardbox'>
-				<img className="kioskcardbox__image" alt=""src={thing[0].img}/>
-				<div className='kioskcardbox__category'>{this.props.category}</div>
-                <div className='kioskcardbox__funds'>${this.props.cash}</div>
+			<div className='kioskcard'>
+				<img className="kioskcard__image" alt=""src={thing ? thing[0].img : null}/>
+				<div className='kioskcard__bottom'>
+					<div className='kioskcard__bottom-category'>{this.props.category}</div>
+						<div className='kioskcard__bottom-funds'>${this.props.cash}</div>
+				</div>
 			</div>
 			</>
 		);

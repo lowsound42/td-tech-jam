@@ -10,7 +10,11 @@ export const Images = {
   apples2: require('../assets/apples2.jpg'),
   clothing2: require('../assets/clothing2.jpg'),
   toothbrush2: require('../assets/toothbrush2.jpg'),
-  pet2: require('../assets/pet2.jpg')
+  joe2: require('../assets/test.jpg'),
+  pet2: require('../assets/pet2.jpg'),
+  kiosklogin: require('../assets/login.png'),
+  td: require('../assets/td.png'),
+  beacon: require('../assets/beacon.jpg')
 }
 
 export const KioskCategories = [

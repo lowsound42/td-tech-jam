@@ -5,7 +5,7 @@
         "needed": [
             "Pet Supplies", 
             "Winter Gear", 
-            "Shoes"
+            "Hygiene"
         ],
         "inNeedOf": [
             {
@@ -17,8 +17,12 @@
                 "cash": 12
             },
             {
-                "category": "Hygeine",
+                "category": "Pet Supplies",
                 "cash": 13
+            },
+            {
+                "category": "Winter Gear",
+                "cash": 29
             }
         ]
     }, 
@@ -28,7 +32,7 @@
         "needed": [
             "Pet Supplies", 
             "Winter Gear", 
-            "Shoes"
+            "Hygiene"
         ],        
         "inNeedOf": [
             {
@@ -50,7 +54,7 @@
         "needed": [
             "Pet Supplies", 
             "Winter Gear", 
-            "Shoes"
+            "Hygiene"
         ],        
         "inNeedOf": [
             {
@@ -72,7 +76,7 @@
         "needed": [
             "Pet Supplies", 
             "Winter Gear", 
-            "Shoes"
+            "Hygiene"
         ],        
         "inNeedOf": [
             {
@@ -94,7 +98,7 @@
         "needed": [
             "Pet Supplies", 
             "Winter Gear", 
-            "Shoes"
+            "Hygiene"
         ],        
         "inNeedOf": [
             {

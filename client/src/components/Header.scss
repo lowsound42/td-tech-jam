@@ -12,13 +12,15 @@
 
     &__date{
         color: white;
-        margin-left: 34.5rem;
         font-size: 12pt;
+        float: right;
+        margin-top: 3rem;
+        margin-right: 1rem;
     }
 
     &__logout{
         position: absolute;
-        top: 5%;
+        top: 2%;
         right: 3%;
     }
 }

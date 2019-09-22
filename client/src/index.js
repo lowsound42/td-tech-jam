@@ -7,11 +7,13 @@ import * as serviceWorker from './serviceWorker';
 import Dashboard from './components/Dashboard';
 import Kiosk from './components/Kiosk';
 import KioskLogin from './components/KioskLogin';
+import MainLogin from './components/MainLogin';
 
 ReactDOM.render(
     <Router>
   <Switch>
-      <Route path='/' exact component={Dashboard}/>
+      <Route path='/' exact component={MainLogin}/>
+      <Route path='/beacon' exact component={Dashboard}/>
       <Route path='/kiosk' component={Kiosk}/> 
       <Route path='/klogin' component={KioskLogin}/>
   </Switch>

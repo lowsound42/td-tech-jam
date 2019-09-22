@@ -9,7 +9,6 @@ app.use(express.json());
 app.use(cors());
 
 
-// Run `npm init`, then `npm install request request-debug request-promise-native --save`
 "use strict";
 
 const apiKey = process.env.API_KEY;

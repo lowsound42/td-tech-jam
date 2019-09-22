@@ -43,7 +43,7 @@ app.get('/query/:id', (req, res) => {
     var tempArr; 
         for (let i = 0; i<database.length; i++){
             if (database[i].code == code){
-                tempArr = database[i].inNeedOf;
+                tempArr = database[i].needed;
                 break;
             } else continue;
         }

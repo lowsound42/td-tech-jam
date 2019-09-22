@@ -2,7 +2,11 @@
     {
         "code":1234,
         "name": "Joe",
-        "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],
         "inNeedOf": [
             {
                 "category": "Food",
@@ -21,7 +25,11 @@
     {
         "code":4321,
         "name": "Fred",
-        "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
                 "category": "Food",
@@ -39,7 +47,11 @@
     {
         "code":9491,
         "name": "Ahmed",
-        "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
                 "category": "Food",
@@ -57,7 +69,11 @@
     {
         "code":2118,
         "name": "Alyssa",
-        "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
                 "category": "Food",
@@ -75,7 +91,11 @@
     {
         "code":4866,
         "name": "Neha",
-        "needed": "['Pet Supplies', 'Cold and Flu Medicine', 'Winter Gear', 'Shoes']",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
                 "category": "Food",

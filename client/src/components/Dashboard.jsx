@@ -67,7 +67,7 @@ class Dashboard extends Component {
       "category": `${this.state.category}`,
       "cash": this.state.amount
     };
-    axios.post(`${serverURL}/donate`, donateObj).then(res => {
+    axios.post('http://localhost:2112/donate', donateObj).then(res => {
      console.log(res.data)
      this.setState({ showModal: false })
     });

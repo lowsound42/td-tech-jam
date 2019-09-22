@@ -7,6 +7,7 @@ class Kiosk extends React.Component {
 
 	render() {
 		var tempCategory = this.props.category;
+		console.log(tempCategory);
 		var thing = Constants.KioskCategories.filter((item) => (item.name === tempCategory))
 		console.log(thing);
 		return (

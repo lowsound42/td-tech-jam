@@ -51,7 +51,21 @@ app.get('/query/:id', (req, res) => {
        
 
 app.post('/donate', (req, res) => {
-    database.forEach(element => {
+    console.log(req.body);
+    var num = req.body.cash;
+    console.log(num);
+    const data = 
+    {
+        "amount": num,
+        "currency": "CAD",
+        "fromAccountId": "86bcc9b2-9baf-4ec3-9f93-ca1d028ef29c",
+        "receipt": "{ \"category\": \"req.body.category\"}",
+        "toAccountId": "bb1ca4ad-f0d7-4c72-9183-2abbf01f8e3a"
+    };
+    axios.post('https://api.td-davinci.com/api/transfers', data, { headers: headers}).then(res => {
+     console.log(res.data)
+    });
+      database.forEach(element => {
         if (element.code == req.body.code){
             element.inNeedOf.forEach(item => {
                 if (item.category == req.body.category){

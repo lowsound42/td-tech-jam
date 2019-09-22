@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import { Button, Modal, Container, Row, Col } from 'react-bootstrap';
-=======
-import { Form, Button, InputGroup, FormControl, Modal, Container, Row, Col} from 'react-bootstrap';
->>>>>>> f43ef1b609f432153c54c27139d7340f2bcfbf5e
 import styled from 'styled-components';
 import axios from 'axios';
 import * as Constants from "../utils/constants";

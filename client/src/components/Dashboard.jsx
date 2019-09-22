@@ -81,7 +81,7 @@ class Dashboard extends Component {
         <Button className="center" variant="primary" onClick={this.connectWithRecipient}>Search</Button>
 
         <ModalContainer show={this.state.showModal} onHide={this.handleClose}>
-          <img classname="backdrop-img" src={Constants.Images.backdrop}/>
+          <img className="backdrop-img" src={Constants.Images.backdrop}/>
           <div className="backdrop-color">
             <Modal.Header closeButton></Modal.Header>
             

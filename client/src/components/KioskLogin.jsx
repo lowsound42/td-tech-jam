@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
 import axios from 'axios';
 import { Redirect} from "react-router-dom";
 import './kiosklogin.scss';
-import image from '../assets/userImage.jpg';
 
-const serverURL = 'http://localhost:2112'
 
 class Kiosk extends React.Component {
 	state = {
@@ -25,6 +22,7 @@ class Kiosk extends React.Component {
 
 	formSubmit = (event) => {
 		event.preventDefault();
+		console.log('test')
 		this.state.data.map(item => {
 			if (item.code == event.target.userCode.value){
 				this.setState({

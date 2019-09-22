@@ -6,8 +6,39 @@ export const Images = {
   shirts: require('../assets/shirts.png'),
   toothbrush: require('../assets/toothbrush.png'),
   joe: require('../assets/joe.png'),
-  backdrop: require('../assets/backdrop.png')
+  backdrop: require('../assets/backdrop.png'),
+  apples2: require('../assets/apples2.jpg'),
+  clothing2: require('../assets/clothing2.jpg'),
+  toothbrush2: require('../assets/toothbrush2.jpg'),
+  pet2: require('../assets/pet2.jpg')
 }
+
+export const KioskCategories = [
+  {
+    name: 'Food',
+    img: Images.apples2
+  },
+  {
+    name: 'Clothing',
+    img: Images.clothing2
+  },
+  {
+    name: 'Hygiene',
+    img: Images.toothbrush2
+  },
+  {
+    name: 'Pet Supplies',
+    img: Images.pet2
+  },
+  {
+    name: 'Winter Gear',
+    img: Images.clothing2
+  },
+  {
+    name: 'Any',
+    img: null
+  }
+]
 
 export const Categories = [
   {

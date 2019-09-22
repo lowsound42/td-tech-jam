@@ -17,8 +17,12 @@
                 "cash": 12
             },
             {
-                "category": "Hygeine",
+                "category": "Pet Supplies",
                 "cash": 13
+            },
+            {
+                "category": "Winter Gear",
+                "cash": 29
             }
         ]
     }, 

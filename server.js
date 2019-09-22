@@ -13,7 +13,6 @@ app.use(cors());
 "use strict";
 
 const apiKey = process.env.API_KEY;
-console.log(apiKey)
 
 const headers = {
     "Authorization": apiKey,

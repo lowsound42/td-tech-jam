@@ -12,7 +12,7 @@ class Kiosk extends React.Component {
 			<>
 			<div className='cardbox'>
                 <div className='category'>{this.props.category}</div>
-                <div className='funds'>{this.props.cash}</div>
+                <div className='funds'>${this.props.cash}</div>
 			</div>
 			</>
 		);

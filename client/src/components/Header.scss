@@ -1,0 +1,24 @@
+.header{
+    height:20vh;
+    width: 100%;
+    background-color: #0046a6;
+    color: white;
+    font-size: 48pt;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 2pt;
+    padding-left: 4.5rem;
+    padding-top: 2rem;
+    position: relative;
+
+    &__date{
+        color: white;
+        margin-left: 34.5rem;
+        font-size: 12pt;
+    }
+
+    &__logout{
+        position: absolute;
+        top: 5%;
+        right: 3%;
+    }
+}

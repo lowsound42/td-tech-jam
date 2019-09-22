@@ -4,6 +4,7 @@ import axios from 'axios';
 import './kiosk.scss';
 import image from '../assets/userImage.jpg';
 import KioskCard from './KioskCard';
+import Header from './Header';
 
 const serverURL = 'http://localhost:2112'
 
@@ -36,7 +37,7 @@ class Kiosk extends React.Component {
 
 		return (
 			<>
-			<button onClick={this.goBack} className='logout'>Logout</button>
+			<Header goBack={this.goBack}/>
 			<div className='flexbox'>
 					<div className='image__container'>
 						<img className='image__container-image' src={image}></img>

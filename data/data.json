@@ -1,13 +1,19 @@
 [
     {
         "code":1234,
+        "name": "Joe",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 5
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 12
             },
             {
@@ -18,13 +24,19 @@
     }, 
     {
         "code":4321,
+        "name": "Fred",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 12
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 21
             },
             {
@@ -34,13 +46,19 @@
     }, 
     {
         "code":9491,
+        "name": "Ahmed",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 10
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 12
             },
             {
@@ -50,13 +68,19 @@
     }, 
     {
         "code":2118,
+        "name": "Alyssa",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 13
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 8
             },
             {
@@ -66,13 +90,19 @@
     }, 
     {
         "code":4866,
+        "name": "Neha",
+        "needed": [
+            "Pet Supplies", 
+            "Winter Gear", 
+            "Shoes"
+        ],        
         "inNeedOf": [
             {
-                "category": "food",
+                "category": "Food",
                 "cash": 12
             },
             {
-                "category": "clothing",
+                "category": "Clothing",
                 "cash": 15
             },
             {

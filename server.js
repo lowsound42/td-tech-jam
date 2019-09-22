@@ -20,6 +20,22 @@ const headers = {
     'Content-Type': 'application/json',
   }
 
+  app.get('/data/', (req, res) => {
+      res.json(database);
+    }
+)
+
+app.get('/data/:id', (req, res) => {
+    var code = req.params.id;
+    for (let i = 0; i<database.length; i++){
+        if (database[i].code == code){
+            console.log(database[i]);
+            res.send(database[i])
+            break;
+        } else continue;
+    }
+})
+
 app.get('/query/:id', (req, res) => {
     var obj;
     var code = req.params.id;
@@ -27,7 +43,7 @@ app.get('/query/:id', (req, res) => {
     var tempArr; 
         for (let i = 0; i<database.length; i++){
             if (database[i].code == code){
-                tempArr = database[i].inNeedOf;
+                tempArr = database[i].needed;
                 break;
             } else continue;
         }

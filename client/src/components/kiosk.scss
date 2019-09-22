@@ -1,0 +1,62 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 4rem 5rem 10rem 5rem;
+}
+
+
+.logout{
+    margin-left: 90%;
+    margin-top: 2%;
+}
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    &-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--button{
+            background-color: #F16522;
+            border-radius: 10px;
+            border: none;
+            padding: 1rem;
+            width: 10rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+   
+    &-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.image__container{
+    &-image{
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &-code{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    &-name{
+        text-align: center;
+    }
+}

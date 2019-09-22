@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Modal, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, InputGroup, FormControl, Modal, Container, Row, Col} from 'react-bootstrap';
 import styled from 'styled-components';
 import axios from 'axios';
 import * as Constants from "../utils/constants";
@@ -33,12 +33,11 @@ class Dashboard extends Component {
   connectWithRecipient() {
     const code = 1234
     axios.get(`${serverURL}/query/` + code).then(res => {
-      console.log(res);
+      console.log((res.data));
       this.setState({
         inNeedOf: res.data,
         showModal: true
       });
-      console.log(this.state.inNeedOf)
     });
   }
 
@@ -65,8 +64,8 @@ class Dashboard extends Component {
     const donateObj = 
     {
       "code": "1234",
-      "category": "clothing",
-      "cash": 5
+      "category": `${this.state.category}`,
+      "cash": this.state.amount
     };
     axios.post(`${serverURL}/donate`, donateObj).then(res => {
      console.log(res.data)
@@ -93,7 +92,7 @@ class Dashboard extends Component {
 
               <h2>I need Most</h2>
               <Row>
-                { this.state.inNeedOf.map((needed, i) => (
+                {this.state.inNeedOf.map((needed, i) => (
                   <Col key={i} onClick={() => this.setCategory(needed)}>
                     <div className="bubble-needed"></div>
                     <span>{needed}</span>
